@@ -1,0 +1,69 @@
+'username: A9'
+'tablespace location: E:\sqldb\oradata\ORCL\DATAFILE\'
+'executing create_tablespace.sql'
+old   1: CREATE TABLESPACE "&&TABLESPACE_NAME"
+new   1: CREATE TABLESPACE "A9_DATA"
+old   3:         '&&TABLESPACE_FILE_NAME' SIZE 10M AUTOEXTEND ON NEXT 100M MAXSIZE 10G
+new   3:         'E:\sqldb\oradata\ORCL\DATAFILE\A9_DATA.DBF' SIZE 10M AUTOEXTEND ON NEXT 100M MAXSIZE 10G
+
+Tablespace created.
+
+old   1: CREATE TABLESPACE "&&INDEX_NAME"
+new   1: CREATE TABLESPACE "A9_IDX"
+old   3:         '&&INDEX_FILE_NAME' SIZE 10M AUTOEXTEND ON NEXT 100M MAXSIZE 10G
+new   3:         'E:\sqldb\oradata\ORCL\DATAFILE\A9_IDX.DBF' SIZE 10M AUTOEXTEND ON NEXT 100M MAXSIZE 10G
+
+Tablespace created.
+
+'index and data tablespaces created succesfully'
+'executing create_user.sql'
+old   1: CREATE USER "&&USERNAME" IDENTIFIED BY "oracle"
+new   1: CREATE USER "A9" IDENTIFIED BY "oracle"
+old   2: DEFAULT TABLESPACE "&&USERNAME._DATA"
+new   2: DEFAULT TABLESPACE "A9_DATA"
+
+User created.
+
+'user created succesfully'
+'executing user_privilege.sql'
+old   1: GRANT CREATE SEQUENCE TO &&USERNAME
+new   1: GRANT CREATE SEQUENCE TO A9
+
+Grant succeeded.
+
+old   1: GRANT CREATE ANY DIRECTORY TO &&USERNAME
+new   1: GRANT CREATE ANY DIRECTORY TO A9
+
+Grant succeeded.
+
+old   1: GRANT CREATE TABLE TO &&USERNAME
+new   1: GRANT CREATE TABLE TO A9
+
+Grant succeeded.
+
+old   1: GRANT CREATE TYPE TO &&USERNAME
+new   1: GRANT CREATE TYPE TO A9
+
+Grant succeeded.
+
+old   1: GRANT CREATE SYNONYM TO &&USERNAME
+new   1: GRANT CREATE SYNONYM TO A9
+
+Grant succeeded.
+
+old   1: GRANT CREATE SESSION TO &&USERNAME
+new   1: GRANT CREATE SESSION TO A9
+
+Grant succeeded.
+
+old   1: GRANT CREATE PROCEDURE TO &&USERNAME
+new   1: GRANT CREATE PROCEDURE TO A9
+
+Grant succeeded.
+
+old   1: GRANT CREATE TRIGGER TO &&USERNAME
+new   1: GRANT CREATE TRIGGER TO A9
+
+Grant succeeded.
+
+'privileges given to A9 succesfully'

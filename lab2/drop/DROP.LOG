@@ -1,0 +1,18 @@
+'username: A5'
+'executing drop_user.sql'
+'user A5 dropped succesfully'
+'executing drop_tablespace.sql'
+old   1: DROP TABLESPACE "&&TABLESPACE_NAME"
+new   1: DROP TABLESPACE "A5_DATA"
+
+Tablespace dropped.
+
+old   1: DROP TABLESPACE "&&INDEX_NAME"
+new   1: DROP TABLESPACE "A5_IDX"
+
+Tablespace dropped.
+
+
+Commit complete.
+
+'tablespace A5_DATA dropped'
