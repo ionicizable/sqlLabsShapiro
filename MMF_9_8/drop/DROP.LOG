@@ -1,18 +1,24 @@
-'username: A5'
+Enter value for 1: ILYA2
+'username: ILYA2'
 'executing drop_user.sql'
-'user A5 dropped succesfully'
+old   1: DROP USER "&&USERNAME" CASCADE
+new   1: DROP USER "ILYA2" CASCADE
+
+User dropped.
+
+'user ILYA2 dropped succesfully'
 'executing drop_tablespace.sql'
 old   1: DROP TABLESPACE "&&TABLESPACE_NAME"
-new   1: DROP TABLESPACE "A5_DATA"
+new   1: DROP TABLESPACE "ILYA2_DATA"
 
 Tablespace dropped.
 
 old   1: DROP TABLESPACE "&&INDEX_NAME"
-new   1: DROP TABLESPACE "A5_IDX"
+new   1: DROP TABLESPACE "ILYA2_IDX"
 
 Tablespace dropped.
 
 
 Commit complete.
 
-'tablespace A5_DATA dropped'
+'tablespace ILYA2_DATA dropped'
