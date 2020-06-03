@@ -1,24 +1,29 @@
-Enter value for 1: ILYA2
-'username: ILYA2'
+'username: MMF_9_8'
 'executing drop_user.sql'
 old   1: DROP USER "&&USERNAME" CASCADE
-new   1: DROP USER "ILYA2" CASCADE
+new   1: DROP USER "MMF_9_8" CASCADE
 
 User dropped.
 
-'user ILYA2 dropped succesfully'
+'user MMF_9_8 dropped succesfully'
 'executing drop_tablespace.sql'
 old   1: DROP TABLESPACE "&&TABLESPACE_NAME"
-new   1: DROP TABLESPACE "ILYA2_DATA"
+new   1: DROP TABLESPACE "MMF_9_8_DATA"
+DROP TABLESPACE "MMF_9_8_DATA"
+*
+ERROR at line 1:
+ORA-00959: tablespace 'MMF_9_8_DATA' does not exist 
 
-Tablespace dropped.
 
 old   1: DROP TABLESPACE "&&INDEX_NAME"
-new   1: DROP TABLESPACE "ILYA2_IDX"
+new   1: DROP TABLESPACE "MMF_9_8_IDX"
+DROP TABLESPACE "MMF_9_8_IDX"
+*
+ERROR at line 1:
+ORA-00959: tablespace 'MMF_9_8_IDX' does not exist 
 
-Tablespace dropped.
 
 
 Commit complete.
 
-'tablespace ILYA2_DATA dropped'
+'tablespace MMF_9_8_DATA dropped'

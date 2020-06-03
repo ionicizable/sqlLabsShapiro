@@ -1,69 +1,81 @@
-'username: A9'
+Enter value for 1: MMF_9_8
+Enter value for 2: E:\sqldb\oradata\ORCL\DATAFILE\
+'username: MMF_9_8'
 'tablespace location: E:\sqldb\oradata\ORCL\DATAFILE\'
 'executing create_tablespace.sql'
 old   1: CREATE TABLESPACE "&&TABLESPACE_NAME"
-new   1: CREATE TABLESPACE "A9_DATA"
+new   1: CREATE TABLESPACE "MMF_9_8_DATA"
 old   3:         '&&TABLESPACE_FILE_NAME' SIZE 10M AUTOEXTEND ON NEXT 100M MAXSIZE 10G
-new   3:         'E:\sqldb\oradata\ORCL\DATAFILE\A9_DATA.DBF' SIZE 10M AUTOEXTEND ON NEXT 100M MAXSIZE 10G
+new   3:         'E:\sqldb\oradata\ORCL\DATAFILE\MMF_9_8_DATA.DBF' SIZE 10M AUTOEXTEND ON NEXT 100M MAXSIZE 10G
 
 Tablespace created.
 
 old   1: CREATE TABLESPACE "&&INDEX_NAME"
-new   1: CREATE TABLESPACE "A9_IDX"
+new   1: CREATE TABLESPACE "MMF_9_8_IDX"
 old   3:         '&&INDEX_FILE_NAME' SIZE 10M AUTOEXTEND ON NEXT 100M MAXSIZE 10G
-new   3:         'E:\sqldb\oradata\ORCL\DATAFILE\A9_IDX.DBF' SIZE 10M AUTOEXTEND ON NEXT 100M MAXSIZE 10G
+new   3:         'E:\sqldb\oradata\ORCL\DATAFILE\MMF_9_8_IDX.DBF' SIZE 10M AUTOEXTEND ON NEXT 100M MAXSIZE 10G
 
 Tablespace created.
 
 'index and data tablespaces created succesfully'
 'executing create_user.sql'
 old   1: CREATE USER "&&USERNAME" IDENTIFIED BY "oracle"
-new   1: CREATE USER "A9" IDENTIFIED BY "oracle"
+new   1: CREATE USER "MMF_9_8" IDENTIFIED BY "oracle"
 old   2: DEFAULT TABLESPACE "&&USERNAME._DATA"
-new   2: DEFAULT TABLESPACE "A9_DATA"
+new   2: DEFAULT TABLESPACE "MMF_9_8_DATA"
 
 User created.
 
 'user created succesfully'
 'executing user_privilege.sql'
 old   1: GRANT CREATE SEQUENCE TO &&USERNAME
-new   1: GRANT CREATE SEQUENCE TO A9
+new   1: GRANT CREATE SEQUENCE TO MMF_9_8
 
 Grant succeeded.
 
 old   1: GRANT CREATE ANY DIRECTORY TO &&USERNAME
-new   1: GRANT CREATE ANY DIRECTORY TO A9
+new   1: GRANT CREATE ANY DIRECTORY TO MMF_9_8
 
 Grant succeeded.
 
 old   1: GRANT CREATE TABLE TO &&USERNAME
-new   1: GRANT CREATE TABLE TO A9
+new   1: GRANT CREATE TABLE TO MMF_9_8
+
+Grant succeeded.
+
+old   1: GRANT CREATE VIEW TO &&USERNAME
+new   1: GRANT CREATE VIEW TO MMF_9_8
 
 Grant succeeded.
 
 old   1: GRANT CREATE TYPE TO &&USERNAME
-new   1: GRANT CREATE TYPE TO A9
+new   1: GRANT CREATE TYPE TO MMF_9_8
 
 Grant succeeded.
 
 old   1: GRANT CREATE SYNONYM TO &&USERNAME
-new   1: GRANT CREATE SYNONYM TO A9
+new   1: GRANT CREATE SYNONYM TO MMF_9_8
 
 Grant succeeded.
 
 old   1: GRANT CREATE SESSION TO &&USERNAME
-new   1: GRANT CREATE SESSION TO A9
+new   1: GRANT CREATE SESSION TO MMF_9_8
 
 Grant succeeded.
 
 old   1: GRANT CREATE PROCEDURE TO &&USERNAME
-new   1: GRANT CREATE PROCEDURE TO A9
+new   1: GRANT CREATE PROCEDURE TO MMF_9_8
 
 Grant succeeded.
 
 old   1: GRANT CREATE TRIGGER TO &&USERNAME
-new   1: GRANT CREATE TRIGGER TO A9
+new   1: GRANT CREATE TRIGGER TO MMF_9_8
 
 Grant succeeded.
 
-'privileges given to A9 succesfully'
+old   1: GRANT UNLIMITED TABLESPACE TO &&USERNAME
+new   1: GRANT UNLIMITED TABLESPACE TO MMF_9_8
+
+Grant succeeded.
+
+'privileges given to MMF_9_8 succesfully'

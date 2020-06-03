@@ -1,0 +1,354 @@
+SP2-0310: unable to open file "TRANSACTION.sql"
+'dropping and creating tables'
+ALTER TABLE "MMF_9_8"."CONSTRUCTOR" DROP CONSTRAINT "FK_CONSTRUCTOR_COUNTRY"
+*
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+ALTER TABLE "MMF_9_8"."PARTICIPANT" DROP CONSTRAINT "FK_CONSTRUCTOR"
+*
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+ALTER TABLE "MMF_9_8"."PARTICIPANT" DROP CONSTRAINT "FK_DRIVER"
+*
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+ALTER TABLE "MMF_9_8"."PARTICIPANT" DROP CONSTRAINT "FK_EVENT"
+*
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+ALTER TABLE "MMF_9_8"."EVENT" DROP CONSTRAINT "FK_TRACK"
+*
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+ALTER TABLE "MMF_9_8"."TRACK" DROP CONSTRAINT "FK_COUNTRY"
+*
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+ALTER TABLE "MMF_9_8"."CONSTRUCTOR" DROP CONSTRAINT "PK_CONSTRUCTOR"
+*
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+ALTER TABLE "MMF_9_8"."DRIVER" DROP CONSTRAINT "PK_DRIVER"
+*
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+ALTER TABLE "MMF_9_8"."PARTICIPANT" DROP CONSTRAINT "PK_PARTICIPANT"
+*
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+ALTER TABLE "MMF_9_8"."EVENT" DROP CONSTRAINT "PK_EVENT"
+*
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+ALTER TABLE "MMF_9_8"."TRACK" DROP CONSTRAINT "PK_TRACK"
+*
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+ALTER TABLE "MMF_9_8"."COUNTRY" DROP CONSTRAINT "PK_COUNTRY"
+*
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+DROP INDEX "MMF_9_8"."IX_FK_CONSTRUCTOR_COUNTRY"
+                     *
+ERROR at line 1:
+ORA-01418: specified index does not exist 
+
+
+DROP INDEX "MMF_9_8"."IX_FK_EVENT"
+                     *
+ERROR at line 1:
+ORA-01418: specified index does not exist 
+
+
+DROP INDEX "MMF_9_8"."IX_FK_DRIVER"
+                     *
+ERROR at line 1:
+ORA-01418: specified index does not exist 
+
+
+DROP INDEX "MMF_9_8"."IX_FK_CONSTRUCTOR"
+                     *
+ERROR at line 1:
+ORA-01418: specified index does not exist 
+
+
+DROP INDEX "MMF_9_8"."IX_FK_TRACK"
+                     *
+ERROR at line 1:
+ORA-01418: specified index does not exist 
+
+
+DROP INDEX "MMF_9_8"."IX_FK_COUNTRY"
+                     *
+ERROR at line 1:
+ORA-01418: specified index does not exist 
+
+
+DROP TABLE "MMF_9_8"."CONSTRUCTOR"
+                     *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+DROP TABLE "MMF_9_8"."COUNTRY"
+                     *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+DROP TABLE "MMF_9_8"."DRIVER"
+                     *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+DROP TABLE "MMF_9_8"."PARTICIPANT"
+                     *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+DROP TABLE "MMF_9_8"."EVENT"
+                     *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+DROP TABLE "MMF_9_8"."TRACK"
+                     *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+
+Table created.
+
+
+Index created.
+
+
+Table altered.
+
+
+Table created.
+
+
+Index created.
+
+
+Table altered.
+
+
+Table created.
+
+
+Index created.
+
+
+Index created.
+
+
+Index created.
+
+
+Table altered.
+
+
+Table created.
+
+
+Table altered.
+
+
+Table created.
+
+
+Table altered.
+
+
+Table created.
+
+
+Index created.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+
+Table altered.
+
+'generating F1Table'
+DROP TABLE MMF_9_8.F1
+                   *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+
+Table created.
+
+'inserting data into F1 table'
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Commit complete.
+
+
+Commit complete.
+
+'inserting F1 data into database tables'
+
+0 rows deleted.
+
+
+4 rows created.
+
+
+0 rows deleted.
+
+
+7 rows created.
+
+
+0 rows deleted.
+
+
+4 rows created.
+
+
+0 rows deleted.
+
+
+4 rows created.
+
+
+0 rows deleted.
+
+
+7 rows created.
+
+
+0 rows deleted.
+
+
+21 rows created.
+
+
+Commit complete.
+
+'creating view'
+DROP VIEW MMF_9_8.F1VIEW
+*
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+
+View created.
+
+
+Commit complete.
+
+
+Commit complete.
+
